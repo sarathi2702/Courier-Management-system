@@ -1,0 +1,16 @@
+{%extends "calc/base.html" %}
+{% block content %}
+{% for post in posts %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ user.username }}</a>
+              <small class="text-muted">{{ post.order_date|date:"F d, Y" }}</small>
+            </div>
+            <h2><a class="article-title" href="#">Consignment_id:{{ post.consignment_id }}</a></h2>
+            <p class="article-content">Destination:{{ post.destination }}</p>
+            <p class="article-content">Weight:{{ post.weight }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{%endblock content%}

@@ -1,0 +1,36 @@
+{%extends "calc/base.html" %}
+{% block content %}
+{% load static %}
+<style type="text/css">
+  .container{
+    width: 100%;
+    height: 10%;
+  }
+  .container .inner{
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 20%;
+    left: 52%;
+  }
+  .container .outer{
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 70%;
+    left: 52%;
+  }
+</style>
+<div class="container">
+  <div class="inner">
+    <meta charset="utf-8" aria-setsize="100">
+    <br><p style="font-size: 50px; color: rgb(255, 255, 255); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Start Shipping</p>
+  </div>
+  <div class="outer">
+    <meta charset="utf-8" aria-setsize="16">
+    <br><p style="font-size: 20px; color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Take advantage of our services and solutions designed to meet
+      <br>all of your shipping requirements. Sign up for a Easy Couriers
+      <br>account below. Let’s get started!</p>
+</div>
+</div>
+{%endblock content%}
