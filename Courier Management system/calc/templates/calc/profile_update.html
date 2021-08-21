@@ -1,0 +1,13 @@
+{% extends "calc/base.html" %}
+{% block content %}
+<div class="content-section">
+    <div class="media">
+      <div class="media-body">
+          <a class="btn btn-secondary btn-sm mt1 mb-1" href="{% url 'profile'%}">Update</a>
+        <h2 class="account-heading">{{ user.username }}</h2>
+        <p class="text-secondary">{{ user.email }}</p>
+        <p class="text-secondary">{{ user.contact }}</p>
+      </div>
+    </div>
+</div>
+{% endblock content %}
